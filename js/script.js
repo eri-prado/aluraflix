@@ -1,16 +1,16 @@
-function adicionarFilme() {
-  var enderecoFilme = document.getElementById("enderecoFilme").value;
-  if (enderecoFilme.endsWith(".jpg") || enderecoFilme.endsWith(".png")) {
-    listarFilmesNaTela(enderecoFilme);
+function insertMovie() {
+  var movieImageLink = document.getElementById("movieImageLink").value;
+  if (movieImageLink.endsWith(".jpg") || movieImageLink.endsWith(".png")) {
+    showMoviesOnScreen(movieImageLink);
   } else {
     console.error("Endereço do filme inválido");
   }
-  document.getElementById("enderecoFilme").value = "";
+  document.getElementById("movieImageLink").value = "";
 }
 
-function listarFilmesNaTela(enderecoFilme) {
-  var elementoInserirFilme = "<img src=" + enderecoFilme + ">";
-  var elementoListaFilmes = document.getElementById("listaFilmes");
-  elementoListaFilmes.innerHTML += elementoInserirFilme;
+function showMoviesOnScreen(movieImageLink) {
+  var elementInsertMovie = "<img src=" + movieImageLink + ">";
+  var actionMovieLocation = document.getElementById("actionMovieLocation");
+  actionMovieLocation.innerHTML += elementInsertMovie;
 }
 

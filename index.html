@@ -18,25 +18,37 @@
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
       alt="">
-    <p class="page-subtitle">
+    <p class="project-description">
       Adicione seus filmes favoritos ao catálogo.
     </p>
 
     <div class="form-wrapper">
-      <input type="text" id="enderecoFilme" name="enderecoFilme" placeholder="Insira endereço de imagem">
-      <input type="text" id="enderecoTrailer" name="enderecoTrailer" placeholder="Insira endereço do trailer">
+      <input type="text" id="movieImageLink" name="movieImageLink" placeholder="Insira endereço de imagem">
+      <input type="text" id="trailerVideoLink" name="trailerVideoLink" placeholder="Insira endereço do trailer">
       <select name="" id="">
-        <option value="">Ação</option>
-        <option value="">Comédia</option>
-        <option value="">Terror</option>
+        <option value="action">Ação</option>
+        <option value="comedy">Comédia</option>
+        <option value="horror">Terror</option>
       </select>
-      <button onClick="adicionarFilme()" class="btn">Adicionar Filme</button>
+      <button onClick="insertMovie()" class="btn">Adicionar Filme</button>
     </div>
 
   </div>
-  <div id="listaFilmes"></div>
 
-  
+  <div id="actionMovie">
+    <h2 class="movieTitle">Ação</h2>
+    <div id="actionMovieLocation"></div>
+  </div>
+  <div id="comedyMovie">
+    <h2>Comédia</h2>
+    <div id="comedyMovieLocation"></div>
+  </div>
+  <div id="horrorMovie">
+    <h2>Terror</h2>
+    <div id="horrorMovieLocation"></div>
+  </div>
+
+
 
 
   <a href="https://alura.com.br/" target="_blank">
