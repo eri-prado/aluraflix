@@ -1,16 +1,16 @@
 function insertMovie() {
-  var movieImageLink = document.getElementById("movieImageLink").value;
+  const movieImageLink = document.getElementById("movieImageLink").value;
   if (movieImageLink.endsWith(".jpg") || movieImageLink.endsWith(".png")) {
     showMoviesOnScreen(movieImageLink);
   } else {
-    console.error("Endereço do filme inválido");
+    alert("Endereço do filme inválido");
   }
   document.getElementById("movieImageLink").value = "";
 }
 
 function showMoviesOnScreen(movieImageLink) {
-  var elementInsertMovie = "<img src=" + movieImageLink + ">";
-  var actionMovieLocation = document.getElementById("actionMovieLocation");
+  const elementInsertMovie = "<img src=" + movieImageLink + ">";
+  const actionMovieLocation = document.getElementById("actionMovieLocation");
   actionMovieLocation.innerHTML += elementInsertMovie;
 }
 

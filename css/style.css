@@ -21,12 +21,17 @@ body {
 }
 
 .page-title {
-  color: #ffffff;
+  color: #fafafa;
   margin: 0 0 5px;
 }
 
+.movieTitle {
+  color: #fafafa;
+  text-align: left;
+}
+
 .project-description {
-  color: #ffffff;
+  color: #fafafa;
   margin-top: 5px;
 }
 
@@ -44,7 +49,7 @@ body {
 #actionMovieLocation img,
 #comedyMovieLocation img,
 #horrorMovieLocation img {
-  margin: 10px;
+  margin: 20px 10px 20px 0;
   max-height: 250px;
 }
 
@@ -67,7 +72,7 @@ input#enderecoFilme {
 }
 
 .btn {
-  color: #ffffff;
+  color: #fafafa;
   background: #da1e26;
   font-weight: bold;
   font-size: 16px;
@@ -79,4 +84,11 @@ input#enderecoFilme {
 
 .form-wrapper button:hover {
   opacity: 0.8;
+}
+
+.listMovies {
+  margin: 15px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
