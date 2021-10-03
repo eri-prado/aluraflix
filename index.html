@@ -24,10 +24,9 @@
 
     <div class="form-wrapper">
       <input type="text" id="movieImageLink" name="movieImageLink" placeholder="Insira endereço de imagem">
-      <input type="text" id="trailerVideoLink" name="trailerVideoLink" placeholder="Insira endereço do trailer">
-      <select name="" id="">
+      <select id="selectMovie">
         <option value="action">Ação</option>
-        <option value="comedy">Comédia</option>
+        <option value="kids">Infantil</option>
         <option value="horror">Terror</option>
       </select>
       <button onClick="insertMovie()" class="btn">Adicionar Filme</button>
@@ -38,25 +37,26 @@
     <div id="actionMovie">
       <h2 class="movieTitle">Ação</h2>
       <div id="actionMovieLocation">
-        <img src="https://br.web.img3.acsta.net/medias/nmedia/18/96/00/68/20438814.jpg" alt="" class="movieAction1">
-        <img src="https://br.web.img3.acsta.net/medias/nmedia/18/96/00/68/20438814.jpg" alt="" class="movieAction2">
-        <img src="https://br.web.img3.acsta.net/medias/nmedia/18/96/00/68/20438814.jpg" alt="" class="movieAction3">
+        <img src="https://ovicio.com.br/wp-content/uploads/2021/04/20210414-ey8wtb4xeaqcm0_.jpg" alt="" class="imgMovie">
+        <img src="https://cafecomnerd.com.br/wp-content/uploads/2019/02/mad-max-road-fury-poster-1-1024x586.jpg" alt="" class="imgMovie">
+        <img src="https://multiversomais.com/wp-content/uploads/2021/05/MK.jpg" alt="" class="imgMovie">
+        <img src="https://i0.wp.com/viventeandante.com/wp-content/uploads/2020/12/Poster-Mundo-em-Caos.jpg?fit=1024%2C701&ssl=1" alt="" class="imgMovie">
       </div>
     </div>
-    <div id="comedyMovie">
-      <h2 class="movieTitle">Comédia</h2>
-      <div id="comedyMovieLocation">
-        <img src="https://3.bp.blogspot.com/-vmQn-03c6Ck/VRSTqjnYbFI/AAAAAAAALWo/dcPV--0gbPE/s1600/Debi-E-Loide-Dois-Idiotas.jpg" alt="" class="movieComedy1">
-        <img src="https://3.bp.blogspot.com/-vmQn-03c6Ck/VRSTqjnYbFI/AAAAAAAALWo/dcPV--0gbPE/s1600/Debi-E-Loide-Dois-Idiotas.jpg" alt="" class="movieComedy2">
-        <img src="https://3.bp.blogspot.com/-vmQn-03c6Ck/VRSTqjnYbFI/AAAAAAAALWo/dcPV--0gbPE/s1600/Debi-E-Loide-Dois-Idiotas.jpg" alt="" class="movieComedy3">
+    <div id="kidsMovie">
+      <h2 class="movieTitle">Infantil</h2>
+      <div id="kidsMovieLocation">
+        <img src="https://static.wixstatic.com/media/ae24f4_dc56e0821f3c476f8bb17571c6f8996a~mv2.png/v1/fill/w_1000,h_523,al_c,usm_0.66_1.00_0.01/ae24f4_dc56e0821f3c476f8bb17571c6f8996a~mv2.png" alt="" class="imgMovie">
+        <img src="http://4.bp.blogspot.com/-eH79hISuCcY/UVDNzTl9n4I/AAAAAAAAAYk/rmDSvegAEOY/s1600/croodsENTER.jpg" alt="" class="imgMovie">
+        <img src="http://apassarinhologa.com.br/wp-content/uploads/2014/07/Zambezia-filme1.jpg" alt="" class="imgMovie">
       </div>
     </div>
     <div id="horrorMovie">
       <h2 class="movieTitle">Terror</h2>
       <div id="horrorMovieLocation">
-        <img src="https://maniacosporfilme.files.wordpress.com/2011/08/insidious.jpg" alt="" class="movieHorror1">
-        <img src="https://maniacosporfilme.files.wordpress.com/2011/08/insidious.jpg" alt="" class="movieHorror2">
-        <img src="https://maniacosporfilme.files.wordpress.com/2011/08/insidious.jpg" alt="" class="movieHorror3">
+        <img src="https://seriesemcena.com.br/wp-content/uploads/2016/04/Invoca%C3%A7%C3%A3o-do-Mal-2-Poster-Main-2.jpg" alt="" class="imgMovie">
+        <img src="https://1.bp.blogspot.com/-AY5Cf06PZqw/Xuf0VzXCX6I/AAAAAAAARNQ/GP5kDNC99kER1bBWU_a67-XiT6_NxfDZgCK4BGAsYHg/d/horror-movie-review-Mama-poster.jpg" alt="" class="imgMovie">
+        <img src="https://clarovideocdn9.clarovideo.net/PELICULAS/HEREDITARY/EXPORTACION_WEB/PT/HEREDITARYWHORIZONTAL.jpg?size=675x380" alt="" class="imgMovie">
       </div>
     </div>
   </div>
@@ -64,8 +64,6 @@
   <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
   </a>
-
-  <!-- https://codepen.io/gugatrentini1/pen/XWgZjKQ?editors=1000-->
 
   <script src="js/script.js"></script>
 </body>

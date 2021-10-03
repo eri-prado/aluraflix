@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: Arial, monospace;
+  letter-spacing: 1px;
   text-align: center;
   background-image: url("../img/bg.jpg");
-  background-color: #000000;
   background-size: cover;
+  background-color: #141414;
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -46,11 +47,30 @@ body {
   right: 10px;
 }
 
-#actionMovieLocation img,
-#comedyMovieLocation img,
-#horrorMovieLocation img {
-  margin: 20px 10px 20px 0;
+.listMovies {
+  display: flex;
+  width: auto;
+}
+
+#actionMovieLocation,
+#kidsMovieLocation,
+#horrorMovieLocation {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.imgMovie {
   max-height: 250px;
+  margin: 15px 20px 15px 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.imgMovie:hover {
+  scale: (1.05);
+  transform: scale(1.05);
 }
 
 .form-wrapper {
@@ -62,17 +82,31 @@ body {
 
 .form-wrapper input,
 select {
+  font-family: inherit;
   padding: 15px 20px;
   border-radius: 4px;
   margin-right: 10px;
+  background: rgba(41, 41, 41, 0.712);
+  color: #fafafa;
 }
 
-input#enderecoFilme {
-  padding: 16px 20px;
+::-webkit-scrollbar {
+  height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fffa;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000a;
+  border-radius: 10px;
 }
 
 .btn {
   color: #fafafa;
+  font-family: inherit;
   background: #da1e26;
   font-weight: bold;
   font-size: 16px;
@@ -90,5 +124,4 @@ input#enderecoFilme {
   margin: 15px 100px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
