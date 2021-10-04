@@ -125,3 +125,19 @@ select {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 525px) {
+  .form-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  .listMovies {
+    display: flex;
+    width: auto;
+    margin: 0 15px;
+  }
+}
