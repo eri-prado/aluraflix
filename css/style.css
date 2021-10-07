@@ -131,6 +131,10 @@ select {
     flex-wrap: wrap;
   }
 
+  #selectMovie {
+    margin-top: 15px;
+  }
+
   .btn {
     margin-top: 15px;
   }
