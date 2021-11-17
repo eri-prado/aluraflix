@@ -1,2 +1,2 @@
 # aluraflix
- Adiciona filmes ao catálogo.
+ Add movies to the catalog.
